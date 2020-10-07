@@ -9,16 +9,16 @@
   color: cfd3d7
 - name: enhancement
   description: New feature or request
-  color: #a2eeef
+  color: a2eeef
 - name: help wanted
   description: Extra attention is needed
-  color: #008672
+  color: 008672
 - name: plugin conflict
   description: issue related to another plugin
-  color: #dda821
+  color: dda821
 - name: solved
   description: workaround documented or fix applied
-  color: #210684
+  color: 210684
 - name: support
   description: how-to or assistance with operation
-  color: #d876e3
+  color: d876e3
