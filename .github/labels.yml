@@ -22,6 +22,3 @@
 - name: support
   description: how-to or assistance with operation
   color: d876e3
-- name: test
-  description: test
-  color: ff0000
