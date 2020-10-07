@@ -1,16 +1,23 @@
 name: Label Sync
 on:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '0 4 * * *'
+  push:
+    branches:
+      - master
+    paths:
+      - .github/labels.yml
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repository:
+          - jneilliii/OctoPrint-BackupScheduler
+          - jneilliii/OctoPrint-GoogleDriveBackup
     steps:
       - uses: actions/checkout@v2
-      - uses: micnncim/action-label-syncer@v1
+      - uses: jacobtomlinson/action-label-syncer@override-repo
         with:
-          manifest: .github/labels.yml 
+          manifest: .github/labels.yml
+          repository: ${{ matrix.repository }}
           token: ${{ secrets.PERSONAL_TOKEN }}
-          repository: jneilliii/OctoPrint-BackupScheduler
