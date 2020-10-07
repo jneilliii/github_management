@@ -1,0 +1,15 @@
+name: Label Sync
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '30 4 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1
+        with:
+          manifest: .github/labels.yml
+          repository: jneilliii/github_management
+          token: ${{ secrets.PERSONAL_TOKEN }}
