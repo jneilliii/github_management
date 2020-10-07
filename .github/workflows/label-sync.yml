@@ -12,5 +12,5 @@ jobs:
       - uses: micnncim/action-label-syncer@v1
         with:
           manifest: .github/labels.yml 
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
           repository: ${{ github.repository }}
