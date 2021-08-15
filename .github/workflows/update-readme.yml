@@ -91,6 +91,6 @@ jobs:
           email: jneilliii+github@gmail.com
           name: jneilliii
           message: Update Sponsors
-          files: README.md
+          files: ./plugin/README.md
           repository: ${{ matrix.repository }}
           token: ${{ secrets.PERSONAL_TOKEN }}
