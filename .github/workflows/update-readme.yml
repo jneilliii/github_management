@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: mingjun97/regex-property-action@test
+      - uses: mingjun97/regex-property-action@v1
         with:
           regex: '(## Sponsors.)(-.*)(##)'
           replacement: '$1\\n\\n\\n$3'
