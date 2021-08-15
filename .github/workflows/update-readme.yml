@@ -11,7 +11,7 @@ jobs:
       - uses: mingjun97/regex-property-action@v1
         with:
           regex: '(## Sponsors.)(^.*)(##)'
-          replacement: '$1{}\n$3'
+          replacement: '$1{}\\n$3'
           include: 'README.md'
           flags: 'gsm'
       - uses: actions/upload-artifact@v2  # upload to artifact to see the changes
