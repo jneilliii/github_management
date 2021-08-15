@@ -11,19 +11,79 @@ on:
 jobs:
   build:
     runs-on: 'ubuntu-latest'
+    strategy:
+      matrix:
+        repository:
+          - jneilliii/github_management
+          - jneilliii/OctoPrint-BackupScheduler
+          - jneilliii/OctoPrint-GoogleDriveBackup
+          - jneilliii/OctoPrint-ActiveFiltersExtended
+          - jneilliii/OctoPrint-AutoTerminalInput
+          - jneilliii/OctoPrint-BedLevelingWizard
+          - jneilliii/OctoPrint-BedLevelVisualizer
+          - jneilliii/OctoPrint-BLTouch
+          - jneilliii/OctoPrint-ConsolidatedTabs
+          - jneilliii/OctoPrint-ConsolidateTempControl
+          - jneilliii/OctoPrint-CustomBackground
+          - jneilliii/OctoPrint-Domoticz
+          - jneilliii/OctoPrint-DragonOrder
+          - jneilliii/OctoPrint-FirmwareErrorHandler
+          - jneilliii/OctoPrint-FloatingNavbar
+          - jneilliii/OctoPrint-ipOnConnect
+          - jneilliii/OctoPrint-M117NavBar
+          - jneilliii/OctoPrint-M117PopUp
+          - jneilliii/OctoPrint-M117SpeechSynthesis
+          - jneilliii/OctoPrint-M300Player
+          - jneilliii/OctoPrint-MQTTPublish
+          - jneilliii/OctoPrint-MQTTSubscribe
+          - jneilliii/OctoPrint-MultiCamView
+          - jneilliii/OctoPrint-MultiLineTerminal
+          - jneilliii/OctoPrint-MyMiniFactory
+          - jneilliii/OctoPrint-OctoDashCompanion
+          - jneilliii/OctoPrint-Playlist
+          - jneilliii/OctoPrint-PlotlyTempGraph
+          - jneilliii/OctoPrint-PrusaSlicerThumbnails
+          - jneilliii/OctoPrint-Python3PluginCompatibilityCheck
+          - jneilliii/OctoPrint-RTMPStreamer
+          - jneilliii/OctoPrint-SideBarTempGraph
+          - jneilliii/OctoPrint-StatefulSidebar
+          - jneilliii/OctoPrint-StickyPad
+          - jneilliii/Octoprint-STLViewer
+          - jneilliii/OctoPrint-TabOrder
+          - jneilliii/OctoPrint-Tasmota
+          - jneilliii/OctoPrint-TasmotaMQTT
+          - jneilliii/OctoPrint-TempControlTab
+          - jneilliii/OctoPrint-TempTermTab
+          - jneilliii/OctoPrint-TerminalCommandsExtended
+          - jneilliii/OctoPrint-TimeLapsePreview
+          - jneilliii/OctoPrint-TPLinkSmartBulb
+          - jneilliii/OctoPrint-TPLinkSmartplug
+          - jneilliii/OctoPrint-UltimakerFormatPackage
+          - jneilliii/OctoPrint-WebcamIframe
+          - jneilliii/OctoPrint-WebcamTempGraph
+          - jneilliii/OctoPrint-WemoSwitch
+          - jneilliii/OctoPrint-WideScreen
+          - jneilliii/OctoPrint-YouTubeLive
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: sponsors
       - name: Read sponsors.md
         id: sponsors
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./sponsors.md
-      - uses: mingjun97/regex-property-action@v1
+          path: ./sponsors/sponsors.md
+      - uses: actions/checkout@v2
+        with:
+          repository: ${{ matrix.repository }}
+          path: plugin
+      - name: Replace sponsors in Readme
+        uses: mingjun97/regex-property-action@v1
         with:
           regex: '(## Sponsors.)(^.*)(##)'
           replacement: '$1${{ steps.sponsors.outputs.content }}$3'
-          include: 'README.md'
+          include: './plugin/README.md'
           flags: 'gsm'
       - name: push
         uses: actions-x/commit@v2
@@ -32,4 +92,5 @@ jobs:
           name: jneilliii
           message: Update Sponsors
           files: README.md
+          repository: ${{ matrix.repository }}
           token: ${{ secrets.PERSONAL_TOKEN }}
