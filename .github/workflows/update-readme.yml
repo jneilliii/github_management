@@ -40,6 +40,8 @@ jobs:
       - name: push
         uses: actions-x/commit@v2
         with:
+          name: jneilliii
+          email: jneilliii+github@gmail.com
           message: Update Sponsors
           files: README.md
           repository: https://github.com/${{ matrix.repository }}
