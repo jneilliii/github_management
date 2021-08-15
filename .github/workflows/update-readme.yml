@@ -2,6 +2,9 @@ name: Sponsor Update
 
 on:
   - push
+    paths:
+      - 'sponsors.md'
+  
 jobs:
   build:
     runs-on: 'ubuntu-latest'
@@ -19,8 +22,11 @@ jobs:
           replacement: '$1${{ steps.sponsors.outputs.content }}$3'
           include: 'README.md'
           flags: 'gsm'
-      - uses: actions/upload-artifact@v2  # upload to artifact to see the changes
+      - name: push
+        uses: actions-x/commit@v2
         with:
-          name: test
-          path: |
-            README.md
+          email: jneilliii+github@gmail.com
+          name: jneilliii
+          message: Update Sponsors
+          files: README.md
+          token: ${{ secrets.PERSONAL_TOKEN }}
