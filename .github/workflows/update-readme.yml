@@ -1,0 +1,20 @@
+name: Sponsor Update
+
+on:
+  - push
+jobs:
+  build:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: mingjun97/regex-property-action@test
+        with:
+          regex: '(## Sponsors.)(-.*)(##)'
+          replacement: '$1\\n\\n\\n$3'
+          include: 'README.md'
+      - uses: actions/upload-artifact@v2  # upload to artifact to see the changes
+        with:
+          name: test
+          path: |
+            README.md
