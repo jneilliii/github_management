@@ -30,6 +30,7 @@ Check out my OctoPrint plugins [here](https://plugins.octoprint.org/by_author/#j
 - [Calanish](https://github.com/calanish)
 - [Will O](https://github.com/4wrxb)
 - [Lachlan Bell](https://lachy.io/)
+
 ## Support My Efforts
 
 [![Patreon](patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](paypal-with-text.png)](https://paypal.me/jneilliii)
