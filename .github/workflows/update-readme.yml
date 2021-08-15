@@ -77,6 +77,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: ${{ matrix.repository }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
       - name: Replace sponsors in Readme
         uses: mingjun97/regex-property-action@v1
         with:
@@ -92,4 +93,3 @@ jobs:
           message: Update Sponsors
           files: README.md
           repository: https://github.com/${{ matrix.repository }}
-          token: ${{ secrets.PERSONAL_TOKEN }}
