@@ -91,5 +91,5 @@ jobs:
           name: jneilliii
           message: Update Sponsors
           files: README.md
-          repository: ${{ matrix.repository }}
+          repository: https://github.com/${{ matrix.repository }}
           token: ${{ secrets.PERSONAL_TOKEN }}
