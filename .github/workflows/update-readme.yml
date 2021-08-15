@@ -77,13 +77,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: ${{ matrix.repository }}
-          path: plugin
       - name: Replace sponsors in Readme
         uses: mingjun97/regex-property-action@v1
         with:
           regex: '(## Sponsors.)(^.*)(##)'
           replacement: '$1${{ steps.sponsors.outputs.content }}$3'
-          include: './plugin/README.md'
+          include: 'README.md'
           flags: 'gsm'
       - name: push
         uses: actions-x/commit@v2
@@ -91,6 +90,6 @@ jobs:
           email: jneilliii+github@gmail.com
           name: jneilliii
           message: Update Sponsors
-          files: ./plugin/README.md
+          files: README.md
           repository: ${{ matrix.repository }}
           token: ${{ secrets.PERSONAL_TOKEN }}
