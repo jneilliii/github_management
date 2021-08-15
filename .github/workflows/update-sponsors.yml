@@ -14,6 +14,7 @@ jobs:
     strategy:
       matrix:
         repository:
+          - jneilliii/github_management
           - jneilliii/OctoPrint-BackupScheduler
           - jneilliii/OctoPrint-GoogleDriveBackup
           - jneilliii/OctoPrint-ActiveFiltersExtended
