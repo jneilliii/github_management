@@ -67,6 +67,7 @@ jobs:
           - jneilliii/OctoPrint-YouTubeLive
           - jneilliii/OctoPrint-PrintScheduler
           - jneilliii/OctoPrint-BLVLogger
+          - jneilliii/OctoPrint-OctoDashCompanion
 
     steps:
       - uses: actions/checkout@v2
