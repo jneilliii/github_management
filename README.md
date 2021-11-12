@@ -21,15 +21,18 @@ Check out my OctoPrint plugins [here](https://plugins.octoprint.org/by_author/#j
 ## Sponsors
 - Andreas Lindermayr
 - [@Mearman](https://github.com/Mearman)
-- [@TxBillbr](https://github.com/TxBillbr)
-- Gerald Dachs
 - [@TheTuxKeeper](https://github.com/thetuxkeeper)
-- @tideline3d
+- [@tideline3d](https://github.com/tideline3d/)
 - [SimplyPrint](https://simplyprint.dk/)
 - [Andrew Beeman](https://github.com/Kiendeleo)
 - [Calanish](https://github.com/calanish)
 - [Will O](https://github.com/4wrxb)
 - [Lachlan Bell](https://lachy.io/)
+- [Johnny Bergdal](https://github.com/bergdahl)
+- [Leigh Johnson](https://github.com/leigh-johnson)
+- [Stephen Berry](https://github.com/berrystephenw)
+- [Guyot François](https://github.com/iFrostizz)
+- César Romero
 
 ## Support My Efforts
 
