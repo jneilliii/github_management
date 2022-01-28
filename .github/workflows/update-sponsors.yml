@@ -67,7 +67,9 @@ jobs:
           - jneilliii/OctoPrint-YouTubeLive
           - jneilliii/OctoPrint-PrintScheduler
           - jneilliii/OctoPrint-BLVLogger
-          - jneilliii/OctoPrint-OctoDashCompanion
+          - jneilliii/OctoPrint-GoogleDriveFiles
+          - jneilliii/OctoPrint-ActiveConnections
+          - jneilliii/OctoPrint-TimelapsePurger
 
     steps:
       - uses: actions/checkout@v2

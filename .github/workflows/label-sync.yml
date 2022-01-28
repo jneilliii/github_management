@@ -64,6 +64,9 @@ jobs:
           - jneilliii/OctoPrint-WemoSwitch
           - jneilliii/OctoPrint-WideScreen
           - jneilliii/OctoPrint-YouTubeLive
+          - jneilliii/OctoPrint-GoogleDriveFiles
+          - jneilliii/OctoPrint-ActiveConnections
+          - jneilliii/OctoPrint-TimelapsePurger
     steps:
       - uses: actions/checkout@v2
       - uses: micnncim/action-label-syncer@v1

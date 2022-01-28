@@ -12,4 +12,5 @@
 - [Stephen Berry](https://github.com/berrystephenw)
 - [Guyot François](https://github.com/iFrostizz)
 - César Romero
+- [Steve Dougherty](https://github.com/Thynix)
 
