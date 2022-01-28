@@ -33,6 +33,7 @@ Check out my OctoPrint plugins [here](https://plugins.octoprint.org/by_author/#j
 - [Stephen Berry](https://github.com/berrystephenw)
 - [Guyot François](https://github.com/iFrostizz)
 - César Romero
+- [Steve Dougherty](https://github.com/Thynix)
 
 ## Support My Efforts
 
