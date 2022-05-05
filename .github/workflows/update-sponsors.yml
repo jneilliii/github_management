@@ -93,7 +93,7 @@ jobs:
           include: 'README.md'
           flags: 'gsm'
       - name: push
-        uses: actions-x/commit@v2
+        uses: actions-x/commit@v2.9
         with:
           name: jneilliii
           email: jneilliii+github@gmail.com
