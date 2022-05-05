@@ -70,6 +70,7 @@ jobs:
           - jneilliii/OctoPrint-GoogleDriveFiles
           - jneilliii/OctoPrint-ActiveConnections
           - jneilliii/OctoPrint-TimelapsePurger
+          - jneilliii/OctoPrint-BedReady
 
     steps:
       - uses: actions/checkout@v2
