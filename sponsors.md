@@ -11,6 +11,5 @@
 - [Leigh Johnson](https://github.com/leigh-johnson)
 - [Stephen Berry](https://github.com/berrystephenw)
 - [Guyot François](https://github.com/iFrostizz)
-- César Romero
 - [Steve Dougherty](https://github.com/Thynix)
 - [Kyle Menigoz](https://menigoz.me)
