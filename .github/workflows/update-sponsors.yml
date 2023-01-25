@@ -81,12 +81,12 @@ jobs:
         uses: juliangruber/read-file-action@v1
         with:
           path: ./sponsors/sponsors.md
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           repository: ${{ matrix.repository }}
           token: ${{ secrets.UPDATE_SPONSOR_TOKEN }}
       - name: Replace sponsors in Readme
-        uses: mingjun97/regex-property-action@v1
+        uses: muiriswoulfe/file-regex-replace
         with:
           regex: '(## Sponsors.)(^.*)(##)'
           replacement: '$1${{ steps.sponsors.outputs.content }}$3'
