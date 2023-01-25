@@ -12,4 +12,3 @@
 - [Stephen Berry](https://github.com/berrystephenw)
 - [Guyot François](https://github.com/iFrostizz)
 - [Steve Dougherty](https://github.com/Thynix)
-- [Kyle Menigoz](https://menigoz.me)
