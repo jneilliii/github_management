@@ -12,3 +12,4 @@
 - [Guyot François](https://github.com/iFrostizz)
 - [Steve Dougherty](https://github.com/Thynix)
 - [Flying Buffalo Aerial Photography](http://flyingbuffalo.info/)
+- Sam Fingard
