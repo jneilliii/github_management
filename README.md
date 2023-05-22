@@ -33,7 +33,6 @@ Check out my OctoPrint plugins [here](https://plugins.octoprint.org/by_author/#j
 - [Guyot François](https://github.com/iFrostizz)
 - [Steve Dougherty](https://github.com/Thynix)
 - [Flying Buffalo Aerial Photography](http://flyingbuffalo.info/)
-- Sam Fingard
 ## Support My Efforts
 
 [![Patreon](patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](paypal-with-text.png)](https://paypal.me/jneilliii)
