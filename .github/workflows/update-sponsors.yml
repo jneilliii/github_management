@@ -86,7 +86,7 @@ jobs:
           repository: ${{ matrix.repository }}
           token: ${{ secrets.UPDATE_SPONSOR_TOKEN }}
       - name: Replace sponsors in Readme
-        uses: mingjun97/file-regex-replace@master
+        uses: jneilliii/file-regex-replace@master
         with:
           regex: '(## Sponsors.)(^.*)(##)'
           replacement: '$1${{ steps.sponsors.outputs.content }}$3'
