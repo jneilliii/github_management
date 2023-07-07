@@ -20,19 +20,15 @@ Check out my OctoPrint plugins [here](https://plugins.octoprint.org/by_author/#j
 
 ## Sponsors
 - Andreas Lindermayr
-- [@Mearman](https://github.com/Mearman)
 - [@TheTuxKeeper](https://github.com/thetuxkeeper)
 - [@tideline3d](https://github.com/tideline3d/)
-- [SimplyPrint](https://simplyprint.dk/)
 - [Andrew Beeman](https://github.com/Kiendeleo)
 - [Calanish](https://github.com/calanish)
 - [Lachlan Bell](https://lachy.io/)
 - [Johnny Bergdal](https://github.com/bergdahl)
 - [Leigh Johnson](https://github.com/leigh-johnson)
 - [Stephen Berry](https://github.com/berrystephenw)
-- [Guyot François](https://github.com/iFrostizz)
 - [Steve Dougherty](https://github.com/Thynix)
-- [Flying Buffalo Aerial Photography](http://flyingbuffalo.info/)
 ## Support My Efforts
 
 [![Patreon](patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](paypal-with-text.png)](https://paypal.me/jneilliii)
