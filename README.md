@@ -20,7 +20,6 @@ Check out my OctoPrint plugins [here](https://plugins.octoprint.org/by_author/#j
 
 ## Sponsors
 - Andreas Lindermayr
-- [@TheTuxKeeper](https://github.com/thetuxkeeper)
 - [@tideline3d](https://github.com/tideline3d/)
 - [SimplyPrint](https://simplyprint.io/)
 - [Andrew Beeman](https://github.com/Kiendeleo)
