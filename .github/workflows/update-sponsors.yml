@@ -73,7 +73,7 @@ jobs:
           - jneilliii/OctoPrint-BedReady
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           path: sponsors
       - name: Read sponsors.md
@@ -81,7 +81,7 @@ jobs:
         uses: juliangruber/read-file-action@v1
         with:
           path: ./sponsors/sponsors.md
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           repository: ${{ matrix.repository }}
           token: ${{ secrets.UPDATE_SPONSOR_TOKEN }}
