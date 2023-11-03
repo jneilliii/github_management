@@ -39,7 +39,6 @@ jobs:
           - jneilliii/OctoPrint-MQTTSubscribe
           - jneilliii/OctoPrint-MultiCamView
           - jneilliii/OctoPrint-MultiLineTerminal
-          - jneilliii/OctoPrint-MyMiniFactory
           - jneilliii/OctoPrint-OctoDashCompanion
           - jneilliii/OctoPrint-Playlist
           - jneilliii/OctoPrint-PlotlyTempGraph
