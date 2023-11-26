@@ -67,6 +67,7 @@ jobs:
           - jneilliii/OctoPrint-ActiveConnections
           - jneilliii/OctoPrint-TimelapsePurger
           - jneilliii/OctoPrint-BedReady
+          - jneilliii/OctoPrint-BGCode
     steps:
       - uses: actions/checkout@v4
       - uses: micnncim/action-label-syncer@v1
