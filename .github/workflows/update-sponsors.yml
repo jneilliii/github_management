@@ -71,6 +71,7 @@ jobs:
           - jneilliii/OctoPrint-TimelapsePurger
           - jneilliii/OctoPrint-BedReady
           - jneilliii/OctoPrint-BGCode
+          - jneilliii/OctoPrint-PauseManagement
 
     steps:
       - uses: actions/checkout@v4
