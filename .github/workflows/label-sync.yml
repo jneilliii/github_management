@@ -71,7 +71,7 @@ jobs:
           - jneilliii/OctoPrint-PauseManagement
     steps:
       - uses: actions/checkout@v4
-      - uses: jemmic/action-label-syncer@v1
+      - uses: jemmic/action-label-syncer@master
         with:
           manifest: .github/labels.yml
           repository: ${{ matrix.repository }}
