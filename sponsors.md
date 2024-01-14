@@ -6,6 +6,5 @@
 - [Calanish](https://github.com/calanish)
 - [Lachlan Bell](https://lachy.io/)
 - [Jonny Bergdahl](https://github.com/bergdahl)
-- [Leigh Johnson](https://github.com/leigh-johnson)
 - [Stephen Berry](https://github.com/berrystephenw)
 - [Steve Dougherty](https://github.com/Thynix)
