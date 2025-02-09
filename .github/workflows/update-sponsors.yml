@@ -72,6 +72,9 @@ jobs:
           - jneilliii/OctoPrint-BedReady
           - jneilliii/OctoPrint-BGCode
           - jneilliii/OctoPrint-PauseManagement
+          - jneilliii/OctoPrint-PrusaFilamentRunoutMonitor
+          - jneilliii/OctoPrint-BambuPrinter
+          - jneilliii/OctoPrint-go2rtc
 
     steps:
       - uses: actions/checkout@v4
