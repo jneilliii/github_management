@@ -77,7 +77,7 @@ jobs:
           - jneilliii/OctoPrint-go2rtc
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: sponsors
       - name: Read sponsors.md
@@ -85,7 +85,7 @@ jobs:
         uses: juliangruber/read-file-action@v1
         with:
           path: ./sponsors/sponsors.md
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: ${{ matrix.repository }}
           token: ${{ secrets.UPDATE_SPONSOR_TOKEN }}
