@@ -75,7 +75,7 @@ jobs:
           - jneilliii/OctoPrint-JogWheelControl
     steps:
       - uses: actions/checkout@v5
-      - uses: micnncim/action-label-syncer@v1
+      - uses: brpaz/action-label-syncer@master
         with:
           manifest: .github/labels.yml
           repository: ${{ matrix.repository }}
