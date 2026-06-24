@@ -74,7 +74,7 @@ jobs:
           - jneilliii/OctoPrint-go2rtc
           - jneilliii/OctoPrint-JogWheelControl
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: brpaz/action-label-syncer@master
         with:
           manifest: .github/labels.yml
